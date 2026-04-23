@@ -1,0 +1,21 @@
+
+services:
+  superlanch-db:
+    image: mysql:8.0
+    container_name: brasaburguer
+    restart: always
+
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: brasaburguerdb
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: 123456
+
+    ports:
+      - "3306:3306"
+
+    volumes:
+      - brasaburguer_data:/var/lib/mysql
+
+volumes:
+  brasaburguer_data:
