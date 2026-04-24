@@ -5,7 +5,7 @@ CREATE TABLE tb_category (
     active BOOLEAN NOT NULL DEFAULT TRUE
 );
 
-CREATE TABLE tb_products (
+CREATE TABLE tb_product (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     description TEXT,
